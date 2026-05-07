@@ -10,9 +10,17 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 app.use(cors({
-    origin: 'https://ccass-prototype.kaleyra.dev',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+  origin: [
+    "http://localhost:5173",
+    "https://ccass-prototype.kaleyra.dev"
+  ],
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: [
+    "Content-Type",
+    "Authorization",
+    "appkey"
+  ],
+  credentials: true,
 }));
 
 app.use(express.json());
