@@ -12,7 +12,8 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://ccass-prototype.kaleyra.dev"
+    "https://ccass-prototype.kaleyra.dev",
+    "https://inmmui.orchestrate.tatacommunicationsdigo.io"
   ],
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: [
