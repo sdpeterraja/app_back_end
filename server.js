@@ -34,7 +34,6 @@ app.use(express.json());
 
 app.use("/api", routes);
 app.use("/api/auth", authRoutes);
-app.use("/api_1/login", authRoutes);
 app.use("/api_1", routes);
 
 
