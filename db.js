@@ -92,7 +92,7 @@ export const getUserPermissions = (roleId) =>
 
 export const createUser = (username, plainPassword, roleName) => {
   const role = db.prepare("SELECT id FROM roles WHERE name = ?").get(roleName);
-  if (!role) throw new Error(Role '${roleName}' not found);
+  if (!role) throw new Error(`Role '${roleName}' not found`);
   const hash = bcrypt.hashSync(plainPassword, 10);
   return db
     .prepare("INSERT INTO users (username, password, role_id) VALUES (?, ?, ?)")
