@@ -20,7 +20,8 @@ app.use(cors({
           "https://inmmui.orchestrate.tatacommunicationsdigo.io",
           "http://10.64.9.213:5173/SDD_1/",
     "https://automate-1-git-main-peter-rajas-projects.vercel.app",
-    "https://instaautomate.in"
+    "https://instaautomate.in",
+    "https://www.instaautomate.in"
   ],
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: [
