@@ -19,7 +19,7 @@ app.use(cors({
           "https://inmmui.orchestrate.tatacommunicationsdigo.io/webhook/d542aead-cadb-49e0-b757-a4e4bcd054bf",
           "https://inmmui.orchestrate.tatacommunicationsdigo.io",
           "http://10.64.9.213:5173/SDD_1/",
-    "https://automate-1-git-main-peter-rajas-projects.vercel.app/"
+    "https://automate-1-git-main-peter-rajas-projects.vercel.app"
   ],
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: [
